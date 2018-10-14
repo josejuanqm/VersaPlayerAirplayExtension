@@ -7,6 +7,14 @@
 
 VersaPlayer extension to enable Airplay functionality
 
+## Usage
+
+<div>
+  <p align="center">
+    <img src="https://github.com/josejuanqm/VersaPlayerAirplayExtension/blob/master/sample.png" />
+  </p>
+</div>
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
