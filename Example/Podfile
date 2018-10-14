@@ -10,5 +10,6 @@ target 'VersaPlayerAirplayExtension_Example' do
     pod 'Nimble', '~> 7.0.2'
     pod 'FBSnapshotTestCase' , '~> 2.1.4'
     pod 'Nimble-Snapshots' , '~> 6.3.0'
+    pod 'VersaPlayer'
   end
 end

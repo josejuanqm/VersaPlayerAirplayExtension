@@ -7,17 +7,21 @@
 //
 
 import UIKit
+import VersaPlayer
+import VersaPlayerAirplayExtension
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var player: VersaPlayer!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        if let url = URL.init(string: "http://rmcdn.2mdn.net/Demo/html5/output.mp4") {
+            let item = VPlayerItem(url: url)
+            player.set(item: item)
+        }
+        player.useAirplay(manager: VersaPlayerAirplayManager(with: player))
+        player.airplayManager?.enableAirPlay()
     }
 
 }
